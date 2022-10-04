@@ -11,6 +11,8 @@
 		C2A802FB28EC6BE4006E760F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A802FA28EC6BE4006E760F /* ContentView.swift */; };
 		C2A802FD28EC6BE5006E760F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A802FC28EC6BE5006E760F /* Assets.xcassets */; };
 		C2A8030028EC6BE5006E760F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A802FF28EC6BE5006E760F /* Preview Assets.xcassets */; };
+		C2A8030928EC6D63006E760F /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2A8030828EC6D63006E760F /* Pacifico-Regular.ttf */; };
+		C2A8030C28EC7446006E760F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8030B28EC7446006E760F /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		C2A802FC28EC6BE5006E760F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2A802FF28EC6BE5006E760F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2A8030128EC6BE5006E760F /* ShinilCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShinilCard.entitlements; sourceTree = "<group>"; };
+		C2A8030828EC6D63006E760F /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		C2A8030A28EC6E38006E760F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C2A8030B28EC7446006E760F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +57,14 @@
 		C2A802F728EC6BE4006E760F /* ShinilCard */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8030A28EC6E38006E760F /* Info.plist */,
+				C2A8030728EC6D57006E760F /* fonts */,
 				C2A802F828EC6BE4006E760F /* ShinilCardApp.swift */,
 				C2A802FA28EC6BE4006E760F /* ContentView.swift */,
 				C2A802FC28EC6BE5006E760F /* Assets.xcassets */,
 				C2A8030128EC6BE5006E760F /* ShinilCard.entitlements */,
 				C2A802FE28EC6BE5006E760F /* Preview Content */,
+				C2A8030B28EC7446006E760F /* InfoView.swift */,
 			);
 			path = ShinilCard;
 			sourceTree = "<group>";
@@ -67,6 +75,14 @@
 				C2A802FF28EC6BE5006E760F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2A8030728EC6D57006E760F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8030828EC6D63006E760F /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A8030928EC6D63006E760F /* Pacifico-Regular.ttf in Resources */,
 				C2A8030028EC6BE5006E760F /* Preview Assets.xcassets in Resources */,
 				C2A802FD28EC6BE5006E760F /* Assets.xcassets in Resources */,
 			);
@@ -140,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A802FB28EC6BE4006E760F /* ContentView.swift in Sources */,
+				C2A8030C28EC7446006E760F /* InfoView.swift in Sources */,
 				C2A802F928EC6BE4006E760F /* ShinilCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +292,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShinilCard/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -282,8 +301,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shinilheo.ShinilCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -301,6 +324,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShinilCard/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,8 +333,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shinilheo.ShinilCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
